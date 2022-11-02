@@ -9,8 +9,8 @@ require 'pg'
 def self.connect
   # If the environment variable (set by Render)
   # is present, use this to open the connection.
-  if ENV['DATABASE_URL'] != nil
-    @connection = PG.connect(ENV['DATABASE_URL'])
+  if ENV['postgres://music_library_database_cyef_user:uY1eMRJxdznGg07ZozbzxK3n0S3Y1gWx@dpg-cdh5qm2en0hl21l18spg-a/music_library_database_cyef'] != nil
+    @connection = PG.connect(ENV['postgres://music_library_database_cyef_user:uY1eMRJxdznGg07ZozbzxK3n0S3Y1gWx@dpg-cdh5qm2en0hl21l18spg-a/music_library_database_cyef'])
     return
   end
 
