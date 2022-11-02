@@ -22,6 +22,7 @@ def self.connect
   @connection = PG.connect({ host: '127.0.0.1', dbname: database_name })
 end
 
+
   # This method executes an SQL query 
   # on the database, providing some optional parameters
   # (you will learn a bit later about when to provide these parameters).
@@ -33,4 +34,3 @@ end
     end
     @connection.exec_params(query, params)
   end
-end
